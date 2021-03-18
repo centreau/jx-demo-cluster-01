@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: jx-demo-react-01
     - name: jx-demo-spring-01
     scheduler: in-repo
   slack:

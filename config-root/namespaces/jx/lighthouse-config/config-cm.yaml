@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         centreau/jx-demo-cluster-01: true
+        centreau/jx-demo-react-01: true
         centreau/jx-demo-spring-01: true
     plank: {}
     pod_namespace: jx
@@ -21,6 +22,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         centreau/jx-demo-cluster-01: merge
+        centreau/jx-demo-react-01: merge
         centreau/jx-demo-spring-01: merge
       queries:
       - labels:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - centreau/jx-demo-cluster-01
+        - centreau/jx-demo-react-01
         - centreau/jx-demo-spring-01
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - centreau/jx-demo-cluster-01
+        - centreau/jx-demo-react-01
         - centreau/jx-demo-spring-01
       target_url: http://dashboard-jx.34.116.90.205.nip.io
 kind: ConfigMap
