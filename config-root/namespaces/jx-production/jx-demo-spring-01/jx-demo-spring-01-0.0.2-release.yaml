@@ -1,0 +1,49 @@
+# Source: jx-demo-spring-01/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-18T01:19:26Z"
+  deletionTimestamp: null
+  name: 'jx-demo-spring-01-0.0.2'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: 49427a77bf3f25883b59c707b0b905000733446f
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 2bb05e90303f338d4f6e0d72629019c4e0415666
+    - author:
+        email: asv@complexica.com
+        name: Andrei Sevtsenko
+      branch: master
+      committer:
+        email: asv@complexica.com
+        name: Andrei Sevtsenko
+      message: |
+        fix(plugins): use a better version of maven plugins
+      sha: cad362e182ea1e2dd84f455da28ceeddd1a994ed
+  gitHttpUrl: https://github.com/centreau/jx-demo-spring-01
+  gitOwner: centreau
+  gitRepository: jx-demo-spring-01
+  name: 'jx-demo-spring-01'
+  releaseNotesURL: https://github.com/centreau/jx-demo-spring-01/releases/tag/v0.0.2
+  version: v0.0.2
+status: {}
