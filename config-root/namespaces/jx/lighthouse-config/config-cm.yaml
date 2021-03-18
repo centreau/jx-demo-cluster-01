@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - centreau/jx-demo-cluster-01
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.34.116.90.205.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
