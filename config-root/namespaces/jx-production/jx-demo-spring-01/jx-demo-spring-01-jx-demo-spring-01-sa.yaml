@@ -1,0 +1,8 @@
+# Source: jx-demo-spring-01/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jx-demo-spring-01-jx-demo-spring-01
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
