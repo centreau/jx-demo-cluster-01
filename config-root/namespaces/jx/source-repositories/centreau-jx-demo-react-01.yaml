@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: centreau
+    provider: github
+    repository: jx-demo-react-01
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: centreau-jx-demo-react-01
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/centreau/jx-demo-react-01.git
+  org: centreau
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-demo-react-01
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/centreau/jx-demo-react-01

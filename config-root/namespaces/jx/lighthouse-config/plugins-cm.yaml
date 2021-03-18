@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - centreau/jx-demo-react-01
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - centreau/jx-demo-spring-01
       require_self_approval: true
     cat: {}
@@ -26,6 +30,22 @@ data:
     plugins:
       centreau/jx-demo-cluster-01:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      centreau/jx-demo-react-01:
       - approve
       - assign
       - blunderbuss
@@ -68,6 +88,9 @@ data:
     triggers:
     - repos:
       - centreau/jx-demo-cluster-01
+      trusted_org: todo
+    - repos:
+      - centreau/jx-demo-react-01
       trusted_org: todo
     - repos:
       - centreau/jx-demo-spring-01
