@@ -15,7 +15,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: dev/jx-demo-spring-01
-  version: 0.0.1
+  version: 0.0.2
   name: jx-demo-spring-01
   namespace: jx-staging
   values:

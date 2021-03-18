@@ -5,7 +5,7 @@ metadata:
   name: jx-demo-spring-01-jx-demo-spring-01
   labels:
     draft: draft-app
-    chart: "jx-demo-spring-01-0.0.1"
+    chart: "jx-demo-spring-01-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: jx-demo-spring-01-jx-demo-spring-01
       containers:
         - name: jx-demo-spring-01
-          image: "gcr.io/complexica-demo/jx-demo-spring-01:0.0.1"
+          image: "gcr.io/complexica-demo/jx-demo-spring-01:0.0.2"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.1
+              value: 0.0.2
           envFrom: null
           ports:
             - name: http

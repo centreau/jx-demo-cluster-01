@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: jx-demo-spring-01
   labels:
-    chart: "jx-demo-spring-01-0.0.1"
+    chart: "jx-demo-spring-01-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
 spec:
